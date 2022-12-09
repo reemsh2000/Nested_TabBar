@@ -1,0 +1,15 @@
+:host ::ng-deep .p-tabview .p-tabview-nav {
+  border: none  !important;
+}
+:host ::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  border: 2px solid #95bcf1 !important;
+  border-width: 0 0 2px 0 !important;
+}
+:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  border: none  !important;
+  background-color: transparent !important;
+}
+:host ::ng-deep .p-tabview .p-tabview-panels {
+  margin: 20px 0 0 0  !important;
+  background-color: rgb(185, 185, 185)  !important;
+}
