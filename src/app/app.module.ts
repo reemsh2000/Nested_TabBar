@@ -1,16 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { TabViewModule } from 'primeng/tabview';
+import { ButtonModule } from 'primeng/button';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { RouterModule } from '@angular/router';
+import {ToolbarModule} from 'primeng/toolbar';
+import {DropdownModule} from 'primeng/dropdown';
 
 import { AppComponent } from './app.component';
+import { HomeNavComponent } from './home-nav/home-nav.component';
+import { SubNavComponent } from './sub-nav/sub-nav.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, HomeNavComponent, SubNavComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    TabViewModule,
+    ButtonModule,
+    SplitButtonModule,
+    ToolbarModule,
+    DropdownModule,
+    RouterModule.forRoot([{ path: '', component: AppComponent }]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+*:focus {
+  box-shadow: none !important;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica,
+    Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  --main: #4caf50;
+  --nav: rgb(252, 252, 252);
+  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --font: #666;
+}
