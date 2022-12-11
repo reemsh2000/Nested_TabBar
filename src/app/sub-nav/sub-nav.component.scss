@@ -20,14 +20,9 @@
   display: none;
 }
 
-// :host ::ng-deep .p-tieredmenu-overlay {
-//   background-color: aqua;
-//   position: static;
-//   // z-index: 6000;
-//   //  position: relative;
-//   // position: relative
-// }
-// :host ::ng-deep .p-splitbutton.p-button-secondary.p-button-text > .p-button {
-//   width: 120px;
-//   height: 36px;
-// }
+:host ::ng-deep .p-tieredmenu-overlay {
+  position: static;
+}
+:host ::ng-deep .p-splitbutton.p-button-secondary.p-button-text > .p-button {
+  height: 36px;
+}
