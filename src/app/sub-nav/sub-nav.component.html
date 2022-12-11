@@ -1,15 +1,28 @@
-<p-tabView>
-  <p-tabPanel header="Profile">
+<div class="cont">
+  <p-tabView>
+    <p-tabPanel [header]="item.header" *ngFor="let item of items">
+      {{ item.label }}
+    </p-tabPanel>
+  </p-tabView>
+  <div class="docs">
+    <p-splitButton
+      header="Documents"
+      class="navBtn"
+      label="Documents"
+      [model]="docItems"
+      styleClass="p-button-text mr-2 mb-2"
+    ></p-splitButton>
+  </div>
+</div>
+
+<p-tabView class="hidden" >
+  <p-tabPanel header="Header 1">
     Content 1
   </p-tabPanel>
-  <p-tabPanel header="Dependents">
+  <p-tabPanel header="Header 2">
     Content 2
   </p-tabPanel>
-  <p-tabPanel header="Remarks">
+  <p-tabPanel header="Header 3">
     Content 3
   </p-tabPanel>
-  <p-tabPanel header="Documents" rightIcon="pi pi-chevron-down">
-    Content 4
-  </p-tabPanel>
-  <!-- <p-splitButton  header="Documents" label="Documents" [model]="this.items" styleClass="p-button-text mr-2 mb-2"></p-splitButton> -->
 </p-tabView>

@@ -1,25 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-sub-nav',
   templateUrl: './sub-nav.component.html',
   styleUrls: ['./sub-nav.component.scss'],
-
 })
 export class SubNavComponent implements OnInit {
-  items: MenuItem[];
-  constructor() {
-    this.items = [
-      {label: 'Update', icon: 'pi pi-refresh'},
-      {label: 'Delete', icon: 'pi pi-times'},
-      {label: 'Angular.io', icon: 'pi pi-info', url: 'http://angular.io'},
-      {separator: true},
-      {label: 'Setup', icon: 'pi pi-cog', routerLink: ['/setup']}
+  @Input() items: any[] = [];
+  docItems: any = [
+    { label: 'Clearance Alerts' },
+    { label: 'Certifications' },
+    { label: 'Bank Details' },
+    { label: 'Legal Docs' },
+    { label: 'Other Docs' },
   ];
-   }
-
-  ngOnInit(): void {
+  constructor() {
+    console.log({ it: this.items });
   }
 
+  ngOnInit(): void {}
 }

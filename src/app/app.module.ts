@@ -8,7 +8,7 @@ import { SplitButtonModule } from 'primeng/splitbutton';
 import { RouterModule } from '@angular/router';
 import {ToolbarModule} from 'primeng/toolbar';
 import {DropdownModule} from 'primeng/dropdown';
-
+import {MenubarModule} from 'primeng/menubar';
 import { AppComponent } from './app.component';
 import { HomeNavComponent } from './home-nav/home-nav.component';
 import { SubNavComponent } from './sub-nav/sub-nav.component';
@@ -23,6 +23,7 @@ import { SubNavComponent } from './sub-nav/sub-nav.component';
     SplitButtonModule,
     ToolbarModule,
     DropdownModule,
+    MenubarModule,
     RouterModule.forRoot([{ path: '', component: AppComponent }]),
   ],
   providers: [],
