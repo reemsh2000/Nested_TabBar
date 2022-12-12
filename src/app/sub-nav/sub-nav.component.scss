@@ -21,7 +21,8 @@
 }
 
 :host ::ng-deep .p-tieredmenu-overlay {
-  position: static;
+ // position: static;
+  background-color: red;
 }
 :host ::ng-deep .p-splitbutton.p-button-secondary.p-button-text > .p-button {
   height: 36px;
