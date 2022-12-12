@@ -26,6 +26,9 @@
 :host ::ng-deep .p-splitbutton.p-button-secondary.p-button-text > .p-button {
   height: 36px;
 }
+:host ::ng-deep  #p-tabpanel-4-label {
+  border:0px solid #ffffff !important;
+}
 
 // :host ::ng-deep .p-tabview-nav-container {
 //   height: 50px !important;
