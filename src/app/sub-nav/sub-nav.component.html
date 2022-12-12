@@ -1,28 +1,37 @@
-<div class="cont">
-  <p-tabView>
-    <p-tabPanel [header]="item.header" *ngFor="let item of items">
-      {{ item.label }}
-    </p-tabPanel>
-  </p-tabView>
-  <div class="docs">
-    <p-splitButton
-      header="Documents"
-      class="navBtn"
-      label="Documents"
-      [model]="docItems"
-      styleClass="p-button-text mr-2 mb-2"
-    ></p-splitButton>
-  </div>
-</div>
-
-<p-tabView class="hidden" >
-  <p-tabPanel header="Header 1">
-    Content 1
+<p-tabView>
+  <p-tabPanel [header]="item.header" *ngFor="let item of items">
+    {{ item.label }}
   </p-tabPanel>
-  <p-tabPanel header="Header 2">
-    Content 2
-  </p-tabPanel>
-  <p-tabPanel header="Header 3">
-    Content 3
+  <p-tabPanel>
+    <ng-template pTemplate="header" class="drop">
+      <p-splitButton
+        class="drop_down"
+        label="Documents"
+        [model]="docItems"
+        styleClass="p-button-text p-button-secondary mr-2 mb-2"
+      ></p-splitButton>
+    </ng-template>
+    <p-tabView [(activeIndex)]="index" class="hidden">
+      <p-tabPanel header="Header 1">
+        Content 1
+      </p-tabPanel>
+      <p-tabPanel header="Header 2">
+        Content 2
+      </p-tabPanel>
+      <p-tabPanel header="Header 3">
+        Content 3
+      </p-tabPanel>
+      <p-tabPanel header="Header 4">
+        Content 4
+      </p-tabPanel>
+      <p-tabPanel header="Header 5">
+        Content 5 After a break of more than 15 years, director Francis Ford
+        Coppola and writer Mario Puzo returned to the well for this third and
+        final story of the fictional Corleone crime family. Two decades have
+        passed, and crime kingpin Michael Corleone, now divorced from his wife
+        Kay has nearly succeeded in keeping his promise that his family would
+        one day be completely legitimate.
+      </p-tabPanel>
+    </p-tabView>
   </p-tabPanel>
 </p-tabView>
