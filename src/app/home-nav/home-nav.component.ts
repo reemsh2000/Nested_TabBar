@@ -16,7 +16,6 @@ export class HomeNavComponent implements OnInit {
       icon: 'pi pi-info',
       url: 'http://angular.io',
     },
-    //  {header:"Documents",label: 'Setup', icon: 'pi pi-cog', routerLink: ['/setup']}
   ];
   constructor() {}
 

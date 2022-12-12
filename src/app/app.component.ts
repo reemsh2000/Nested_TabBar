@@ -8,29 +8,6 @@ import { MenuItem } from 'primeng/api';
 })
 export class AppComponent {
   title = 'tab_';
-  items: MenuItem[] = [];
-
   ngOnInit() {
-    this.items = [
-      {
-        label: 'Profile',
-      },
-      {
-        label: 'Dependents',
-      },
-      {
-        label: 'Remarks',
-      },
-      {
-        label: 'Profile',
-        items: [
-          { label: 'Clearance Alerts' },
-          { label: 'Certifications' },
-          { label: 'Bank Details' },
-          { label: 'Legal Docs' },
-          { label: 'Other Docs' },
-        ],
-      },
-    ];
   }
 }
