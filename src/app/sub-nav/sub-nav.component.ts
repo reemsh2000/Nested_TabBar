@@ -21,7 +21,4 @@ export class SubNavComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  func(e: any) {
-    console.log('hi', e);
-  }
 }
