@@ -13,27 +13,17 @@
   margin: 20px 0 0 0 !important;
   background-color: rgb(185, 185, 185) !important;
 }
-.drop_down {
-  margin-top: -14px;
-}
+
 :host ::ng-deep .hidden .p-tabview .p-tabview-nav {
   display: none;
 }
 
-:host ::ng-deep .p-tieredmenu-overlay {
- // position: static;
-  background-color: red;
-}
-:host ::ng-deep .p-splitbutton.p-button-secondary.p-button-text > .p-button {
-  height: 36px;
-}
-:host ::ng-deep  #p-tabpanel-4-label {
-  border:0px solid #ffffff !important;
+:host ::ng-deep #p-tabpanel-4-label {
+  margin-top: -4px;
+  padding: 10px;
 }
 
-// :host ::ng-deep .p-tabview-nav-container {
-//   height: 50px !important;
-// }
-// :host ::ng-deep .p-tabview .p-tabview-nav li {
-//   height: 40px !important;
-// }
+#p-tabpanel-4-label {
+  margin-top: -15px !important;
+  background-color: aqua;
+}

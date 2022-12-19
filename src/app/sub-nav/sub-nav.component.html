@@ -3,27 +3,21 @@
     {{ item.label }}
   </p-tabPanel>
   <p-tabPanel>
-    <ng-template pTemplate="header" class="drop">
-      <p-splitButton
-        class="drop_down"
-        label="Documents"
-        [model]="docItems"
-        styleClass="p-button-text p-button-secondary mr-2 mb-2"
-      ></p-splitButton>
+    <ng-template pTemplate="header">
+      <span>Documents</span>
+      <button
+        pButton
+        class="p-button-text p-button-sm p-0 m-0"
+        icon="pi pi-chevron-down"
+        (click)="op.toggle($event)"
+        #btn
+      ></button>
     </ng-template>
     <p-tabView [(activeIndex)]="index" class="hidden">
-      <p-tabPanel header="Header 1">
-        Content 1
-      </p-tabPanel>
-      <p-tabPanel header="Header 2">
-        Content 2
-      </p-tabPanel>
-      <p-tabPanel header="Header 3">
-        Content 3
-      </p-tabPanel>
-      <p-tabPanel header="Header 4">
-        Content 4
-      </p-tabPanel>
+      <p-tabPanel header="Header 1"> Content 1 </p-tabPanel>
+      <p-tabPanel header="Header 2"> Content 2 </p-tabPanel>
+      <p-tabPanel header="Header 3"> Content 3 </p-tabPanel>
+      <p-tabPanel header="Header 4"> Content 4 </p-tabPanel>
       <p-tabPanel header="Header 5">
         Content 5 After a break of more than 15 years, director Francis Ford
         Coppola and writer Mario Puzo returned to the well for this third and
@@ -35,3 +29,9 @@
     </p-tabView>
   </p-tabPanel>
 </p-tabView>
+
+<p-overlayPanel #op [showTransitionOptions]="'0ms'" [hideTransitionOptions]="'0ms'">
+  <ng-template pTemplate>
+    <p-menu [model]="docItems"></p-menu>
+  </ng-template>
+</p-overlayPanel>

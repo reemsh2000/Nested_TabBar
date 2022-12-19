@@ -13,6 +13,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { AppComponent } from './app.component';
 import { HomeNavComponent } from './home-nav/home-nav.component';
 import { SubNavComponent } from './sub-nav/sub-nav.component';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [AppComponent, HomeNavComponent, SubNavComponent],
@@ -27,6 +29,8 @@ import { SubNavComponent } from './sub-nav/sub-nav.component';
     MenubarModule,
     FormsModule,
     RouterModule.forRoot([{ path: '', component: AppComponent }]),
+    OverlayPanelModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],
